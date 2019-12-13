@@ -1,0 +1,7 @@
+extends layout
+
+block content
+    form(method='POST' action='/subscribe')
+        h1= title
+        input(type="email" name="email")
+        input(type='submit' value='Subscribe')

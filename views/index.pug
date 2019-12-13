@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  form(method='POST' action='/upload' enctype="multipart/form-data")
+    h1= title
+    p Welcome to #{title}
+    input(type="file" accept="image/jpeg" name="photo")
+    input(type='submit' value='Save')
